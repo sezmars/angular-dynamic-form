@@ -6,11 +6,11 @@ import {EnumFieldTypeConfig, Field} from '../../models/field.interface';
 
 import {FormFileComponent} from '../form-file/form-file.component';
 import {FormInputComponent} from '../form-input/form-input.component';
+import {FormRadioComponent} from '../form-radio/form-radio.component';
 import {FormSelectComponent} from '../form-select/form-select.component';
 import {FormButtonComponent} from '../form-button/form-button.component';
 import {FormTextareaComponent} from '../form-textarea/form-textarea.component';
 import {FormCheckboxComponent} from '../form-checkbox/form-checkbox.component';
-import {FormRadioComponent} from '../form-radio/form-radio.component';
 
 const components: { [type: string]: Type<Field> } = {
   file: FormFileComponent,

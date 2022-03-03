@@ -17,25 +17,25 @@ import {FormTextareaComponent} from './components/form-textarea/form-textarea.co
 
 @NgModule({
     imports: [
-        CommonModule,
-        MaterialModules,
-        TemplateRefModule,
-        ReactiveFormsModule,
+      CommonModule,
+      MaterialModules,
+      TemplateRefModule,
+      ReactiveFormsModule,
     ],
     declarations: [
-        FormFileComponent,
-        FormInputComponent,
-        FormSelectComponent,
-        FormButtonComponent,
-        DynamicFormComponent,
-        DynamicFieldDirective,
-        FormCheckboxComponent,
-        FormTextareaComponent,
-        FormRadioComponent,
+      FormFileComponent,
+      FormInputComponent,
+      FormRadioComponent,
+      FormSelectComponent,
+      FormButtonComponent,
+      DynamicFormComponent,
+      DynamicFieldDirective,
+      FormCheckboxComponent,
+      FormTextareaComponent,
     ],
     exports: [
-        TemplateRefModule,
-        DynamicFormComponent,
+      TemplateRefModule,
+      DynamicFormComponent,
     ]
 })
 export class DynamicFormModule {
