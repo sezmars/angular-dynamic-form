@@ -6,6 +6,10 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
+### OR
+
+Go to [Angular Dynamic Form](https://sezmars.github.io/angular-dynamic-form/) / [Stackblitz](https://stackblitz.com/github/sezmars/angular-dynamic-form).
+
 ## Code scaffolding
 
 Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
