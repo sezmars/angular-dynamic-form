@@ -1,0 +1,14 @@
+<div class="card">
+  <app-dynamic-form [config]="config" #dynamicForm="dynamicForm" (submitValue)="submit($event)">
+    <ng-template [appTemplateRef]="customControlName">
+      <app-hello
+        name="I am custom outside componets"
+        [customFormControl]="getFormCustomControl(customControlName)">
+      </app-hello>
+    </ng-template>
+  </app-dynamic-form>
+
+  <mat-card>
+    Valid: {{ dynamicForm.valid }} <br>
+    Value: {{ dynamicForm.value | json }}</mat-card>
+</div>

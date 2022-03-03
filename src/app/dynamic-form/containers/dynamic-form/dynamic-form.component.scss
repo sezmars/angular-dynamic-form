@@ -1,0 +1,24 @@
+:host ::ng-deep {
+  mat-form-field {
+    width: 100%;
+  }
+
+  app-checkbox, app-form-radio {
+    text-align: left;
+  }
+
+  label {
+    margin: 0 0 4px 0;
+  }
+
+  app-file div {
+    margin: 0 0 4px 0;
+  }
+}
+
+mat-card {
+  max-width: 400px;
+  margin: 2em auto;
+  text-align: center;
+}
+
