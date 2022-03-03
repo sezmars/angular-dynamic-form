@@ -1,5 +1,5 @@
 import {FormControl, Validators} from '@angular/forms';
-import {ChangeDetectionStrategy, Component, ViewChild} from '@angular/core';
+import {AfterViewInit, ChangeDetectionStrategy, Component, ViewChild} from '@angular/core';
 
 import {FieldConfig} from './dynamic-form/models/field-config.interface';
 import {EnumFieldTypeConfig} from './dynamic-form/models/field.interface';
@@ -13,7 +13,7 @@ import {DynamicFormComponent} from './dynamic-form/containers/dynamic-form/dynam
   viewProviders: [TemplateRegistry],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class AppComponent {
+export class AppComponent implements AfterViewInit {
   @ViewChild(DynamicFormComponent) dynamicForm: DynamicFormComponent;
 
   customControlName = 'outside_control';
@@ -72,6 +72,12 @@ export class AppComponent {
       type: 'button'
     }
   ];
+
+  ngAfterViewInit(): void {
+    this.dynamicForm.form.valueChanges.subscribe((value) => {
+      console.info(value);
+    });
+  }
 
   getFormCustomControl(control: string): FormControl {
     if (control && this.dynamicForm?.form) {
