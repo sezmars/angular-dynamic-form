@@ -2,7 +2,7 @@
   <app-dynamic-form [config]="config" #dynamicForm="dynamicForm" (submitValue)="submit($event)">
     <ng-template [appTemplateRef]="customControlName">
       <app-hello
-        name="I am custom outside componets"
+        name="I am custom outside componet"
         [customFormControl]="getFormCustomControl(customControlName)">
       </app-hello>
     </ng-template>
