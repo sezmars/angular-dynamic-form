@@ -9,7 +9,7 @@ import {FieldConfig} from '../../models/field-config.interface';
   styleUrls: ['form-button.component.scss'],
   template: `
     <!-- Material button -->
-    <button mat-raised-button color="primary">{{ config.label }}</button>
+    <button mat-raised-button [disabled]="group.invalid" color="primary">{{ config.label }}</button>
 
     <!-- Pure button -->
     <!--<div [formGroup]="group">

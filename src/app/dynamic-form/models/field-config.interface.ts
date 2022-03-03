@@ -10,7 +10,6 @@ export interface FieldConfig {
   label?: string;
   value?: unknown;
   disabled?: boolean;
-  required?: boolean;
   onUpload?: () => {};
   placeholder?: string;
   type: TypeFieldTypeConfig;

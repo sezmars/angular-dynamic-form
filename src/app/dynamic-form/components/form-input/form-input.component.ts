@@ -15,7 +15,6 @@ import {FieldConfig} from '../../models/field-config.interface';
         <input
           matInput
           type="text"
-          [required]="config.required"
           [formControlName]="config.name"
           [attr.placeholder]="config.placeholder">
       </mat-form-field>
@@ -26,7 +25,6 @@ import {FieldConfig} from '../../models/field-config.interface';
       <label>{{ config.label }}</label>
       <input
         type="text"
-        [required]="config.required"
         [formControlName]="config.name"
         [attr.placeholder]="config.placeholder">
     </div>-->

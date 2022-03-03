@@ -22,7 +22,6 @@ export class AppComponent {
       type: EnumFieldTypeConfig.input,
       label: 'Full name',
       name: 'name',
-      required: false,
       placeholder: 'Enter your name',
       validation: [Validators.required, Validators.minLength(4)],
     },
@@ -37,24 +36,21 @@ export class AppComponent {
       name: 'food',
       options: ['Pizza', 'Hot Dogs', 'Knakworstje', 'Coffee'],
       placeholder: 'Select an option',
-      validation: [Validators.required]
     },
     {
       type: EnumFieldTypeConfig.textarea,
       label: 'About yourself',
       name: 'about',
       placeholder: 'Enter about yourself',
-      validation: [Validators.required]
     },
     {
       type: EnumFieldTypeConfig.checkbox,
       name: 'hobby',
       label: 'Hobby',
-      required: true,
       options: [
         {key: 'fishing', label: 'Fishing'},
         {key: 'cooking', label: 'Cooking'}
-      ]
+      ],
     },
     {
       type: EnumFieldTypeConfig.radio,
@@ -63,13 +59,12 @@ export class AppComponent {
       options: [
         {key: 'linkedin', label: 'Linkedin'},
         {key: 'facebook', label: 'Facebook'}
-      ]
+      ],
     },
     {
       type: EnumFieldTypeConfig.file,
       name: 'picture',
       label: 'Picture',
-      required: true,
     },
     {
       label: 'Submit',

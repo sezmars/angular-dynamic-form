@@ -11,10 +11,21 @@ import {FieldConfig} from '../../models/field-config.interface';
     <div [formGroup]="group">
       <!-- Material input file -->
       <button type="button" mat-raised-button (click)="fileInput.click()">Choose File</button>
-      <input hidden type='file' id="imageUpload" accept=".png, .jpg, .jpeg" #fileInput (change)="uploadFile($event)">
+      <input hidden
+             #fileInput
+             type='file'
+             id="imageUpload"
+             accept=".png, .jpg, .jpeg"
+             (change)="uploadFile($event)">
 
       <!-- Pure inpute file -->
-      <!--<input type='file' id="imageUpload" accept=".png, .jpg, .jpeg" #fileInput (change)="uploadFile($event)"/>-->
+      <!--<input
+        #fileInput
+        type='file'
+        id="imageUpload"
+        accept=".png, .jpg, .jpeg"
+        (change)="uploadFile($event)"
+      />-->
     </div>
   `,
 })

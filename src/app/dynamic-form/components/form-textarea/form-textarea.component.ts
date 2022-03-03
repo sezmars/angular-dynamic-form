@@ -26,7 +26,6 @@ import {FieldConfig} from '../../models/field-config.interface';
       <label>{{ config.label }}</label>
       <textarea
         type="text"
-        [required]="config.required"
         [formControlName]="config.name"
         [attr.placeholder]="config.placeholder"></textarea>
     </div>-->
