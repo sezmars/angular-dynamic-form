@@ -27,7 +27,7 @@ export class AppComponent implements AfterViewInit {
     },
     {
       type: EnumFieldTypeConfig.content,
-      label: 'Content between first and second input not working',
+      label: 'Content between first and second input is working',
       name: this.customControlName,
     },
     {
